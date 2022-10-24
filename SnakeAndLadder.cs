@@ -23,8 +23,14 @@ namespace SnakeAndLadder
             {
 
                 nextPosition += random.Next(1, 7);
-                if (nextPosition == EndPosition)
+                if (nextPosition > 100)
                 {
+                    nextPosition -= rollDie;
+                    Console.WriteLine(" player stayed on same position : " + nextPosition);
+                }
+                else if (nextPosition == EndPosition)
+                {
+                    Console.WriteLine("Next position is : " + nextPosition);
                     Console.WriteLine("player position : " + nextPosition + " Player Won");
                     break;
                 }
@@ -36,6 +42,11 @@ namespace SnakeAndLadder
                         case 1:
                             Console.WriteLine("Ladder");
                             nextPosition += rollDie;
+                            if (nextPosition > 100)
+                            {
+                                nextPosition -= rollDie;
+                                Console.WriteLine(" player stayed on same position : " + nextPosition);
+                            }
                             break;
                         case 0:
                             Console.WriteLine("Snake");
@@ -45,7 +56,9 @@ namespace SnakeAndLadder
                             Console.WriteLine("No Play");
                             break;
 
+
                     }
+
                 }
 
                 Console.WriteLine("Next position is : " + nextPosition);
