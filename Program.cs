@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SnakeAndLadder
 {
-    internal class UseCase2
+    internal class Program
     {
-        public static void rollDie()
+        public static void Main(string[] args)
         {
-            //variables
-            int StartPosition = 0;
-            int EndPosition = 100;
-            int rollDie;
-            Random random = new Random();
-            rollDie = random.Next(1, 7);
-            Console.WriteLine("number on die : " + rollDie);
+            //Console.WriteLine("Welcome To Snake and ladder program");
+            UseCase1.rollDie();
+            //UseCase2.rollDie();
 
+
+            //UseCase3.rollDie();
+            //UseCase4.rollDie();
+            //UseCase6.rollDie();
         }
     }
 }
