@@ -10,8 +10,8 @@ namespace SnakeAndLadder
             //SnakeAndLadder.rollDie();
             //SnakeAndLadder.rollDie();
             SnakeAndLadder.rollDie();
-            //UseCase4.rollDie();
-            //UseCase6.rollDie();
+            //UseCase1.rollDie();
+            //UseCase2.rollDie();
         }
     }
 }
