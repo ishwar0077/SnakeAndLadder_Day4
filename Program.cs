@@ -7,11 +7,10 @@ namespace SnakeAndLadder
         public static void Main(string[] args)
         {
             //Console.WriteLine("Welcome To Snake and ladder program");
-            //SnakeAndLadder.rollDie();
-            //SnakeAndLadder.rollDie();
+            //UseCase1.rollDie();
+            //UseCase2.rollDie();
             SnakeAndLadder.rollDie();
-            //UseCase4.rollDie();
-            //UseCase6.rollDie();
+            
         }
     }
 }
