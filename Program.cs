@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace SnakeAndLadder
 {
-    internal class UseCase1
+    internal class UseCase2
     {
-        public static void rolltheDie()
+        public static void rollDie()
         {
-            //the player is at zero position
-            Console.WriteLine("the player is at zeroth position");
+            //variables
+            int StartPosition = 0;
+            int EndPosition = 100;
+            int rollDie;
+            Random random = new Random();
+            rollDie = random.Next(1, 7);
+            Console.WriteLine("number on die : " + rollDie);
+
         }
     }
 }
