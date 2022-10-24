@@ -11,7 +11,7 @@ namespace SnakeAndLadder
         public static void rolltheDie()
         {
             //the player is at zero position
-            Console.WriteLine("Welcome to Snake And lagdder Program");
+            Console.WriteLine("the player is at zeroth position");
         }
     }
 }
